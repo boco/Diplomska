@@ -293,9 +293,6 @@ public class MarchingCubes {
 		for (int i = 0; i < cubesVertices.length; i++){
 			cubesVertices[i] = new Vertex(0, 0, 0);
 		}
-		//for (int i = 0; i < cubesVertices.length; i++){
-		//	System.out.println(cubesVertices[i].getVertex());
-		//}
 				
 		for (int z = 0; z < CTMatrix[0][0].length - 1; z++) {
 			for (int y = 0; y < CTMatrix.length - 1; y++) {
@@ -315,8 +312,6 @@ public class MarchingCubes {
 					cubesVertices[5].setVertex(right, top, back, CTMatrix[top][right][back]);
 					cubesVertices[6].setVertex(right, top, front, CTMatrix[top][right][front]);
 					cubesVertices[7].setVertex(left, top, front, CTMatrix[top][left][front]);
-					
-					//System.out.println("isolevel: "+isolevel+", "+cubesVertices[0].value);
 
 					int cubeIndex = 0;
 					// 0
